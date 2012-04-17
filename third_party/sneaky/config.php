@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Sneaky NSM Add-on Updater information.
+ *
+ * @author          Stephen Lewis (http://github.com/experience/)
+ * @copyright       Experience Internet
+ * @package         Sneaky
+ * @version         0.1.0
+ */
+
+if ( ! defined('SNEAKY_NAME'))
+{
+  define('SNEAKY_NAME', 'Sneaky');
+  define('SNEAKY_TITLE', 'Sneaky');
+  define('SNEAKY_VERSION', '0.1.0');
+}
+
+$config['name']     = SNEAKY_NAME;
+$config['version']  = SNEAKY_VERSION;
+$config['nsm_addon_updater']['versions_xml']
+  = 'http://experienceinternet.co.uk/software/feeds/sneaky';
+
+/* End of file      : config.php */
+/* File location    : third_party/sneaky/config.php */
