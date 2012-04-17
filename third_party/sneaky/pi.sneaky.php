@@ -58,13 +58,15 @@ bit useless.
 ## Usage
 Sneaky provides a single template tag--{exp:sneaky}--which returns a boolean.
  
-    {if exp:sneaky}AJAX{/if}
+    {if {exp:sneaky}}AJAX{/if}
 
-    {if exp:sneaky == true}AJAX{/if}
+    <!--
+      IMPORTANT:
+      {if {exp:sneaky} == true} will not work.
+    -->
+    {if {exp:sneaky} == false}Not AJAX{/if}
 
-    {if exp:sneaky == false}Not AJAX{/if}
-
-    {if exp:sneaky}AJAX{if:else}Not AJAX{/if}
+    {if {exp:sneaky}}AJAX{if:else}Not AJAX{/if}
 
 USAGE;
   }
@@ -88,7 +90,7 @@ USAGE;
     $is_ajax = isset($_SERVER['HTTP_X_REQUESTED_WITH'])
       && $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest';
 
-    $this->return_data = $is_ajax ? 'true' : 'false';
+    $this->return_data = $is_ajax ? 'TRUE' : 'FALSE';
   }
 
 
