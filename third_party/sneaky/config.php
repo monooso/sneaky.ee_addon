@@ -6,14 +6,14 @@
  * @author          Stephen Lewis (http://github.com/experience/)
  * @copyright       Experience Internet
  * @package         Sneaky
- * @version         0.1.0
+ * @version         1.0.0
  */
 
 if ( ! defined('SNEAKY_NAME'))
 {
   define('SNEAKY_NAME', 'Sneaky');
   define('SNEAKY_TITLE', 'Sneaky');
-  define('SNEAKY_VERSION', '0.1.0');
+  define('SNEAKY_VERSION', '1.0.0');
 }
 
 $config['name']     = SNEAKY_NAME;
